@@ -70,6 +70,4 @@ public class HmcPage {
     @FindBy(xpath = "//div[@class='caption']")
     public WebElement listOfHotelRooms;
 
-    @FindBy(xpath = "//body")
-    public WebElement body;
 }

@@ -62,9 +62,7 @@ public class CreateRoom {
         //10. OK butonuna tıklayın.
         hmcPage.alertOkButton.click();
         //11. Hotel rooms linkine tıklayın.
-        hmcPage.body.click();
-        actions.sendKeys(Keys.PAGE_UP).perform();
-        hmcPage.hotelRoomsButton.click();
+        actions.doubleClick(hmcPage.hotelRoomsButton).perform();
 
         //12. "LIST OF HOTELROOMS" textinin göründüğünü doğrulayın.
         Assert.assertTrue(hmcPage.listOfHotelRooms.isDisplayed());
